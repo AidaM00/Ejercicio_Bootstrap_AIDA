@@ -38,10 +38,10 @@
                         </a>
                     </li>
                     <li class="nav-item" style="margin-bottom: 5px;">
-                        <a class="nav-link" href="#profesores" 
+                        <a class="nav-link" href="#Monitores" 
                             style="background-color: #E0E0E0; color: black; border-radius: 5px; padding: 10px 15px; text-align: center; display: block;"
-                            data-bs-toggle="tooltip" title="Lista de profesores disponibles">
-                            PROFESORES
+                            data-bs-toggle="tooltip" title="Lista de Monitores disponibles">
+                            MONITORES
                         </a>
                     </li>
                     <li class="nav-item" style="margin-bottom: 5px;">
@@ -72,7 +72,7 @@
                     </ol>
                 </nav>
                 <h1 class="mt-4" style="text-align: center;">ADMINISTRACIÓN DE PILATES CENTER</h1>
-                <p>Gestiona fácilmente los clientes, profesores y clases</p>
+                <p>Gestiona fácilmente los clientes, monitores y clases</p>
 
                 <!-- Tarjetas de resumen -->
                 <div class="row">
@@ -96,13 +96,13 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Profesores -->
+                    <!-- Monitores -->
                     <div class="col-md-3">
                         <div class="card text-dark" style="background-color: #B7E4C7;">
-                            <div class="card-header">🧘‍♀️ Profesores</div>
+                            <div class="card-header">🧘‍♀️ Monitores</div>
                             <div class="card-body">
                                 <h2 class="card-title">5</h2>
-                                <p class="card-text">Profesores activos en el centro</p>
+                                <p class="card-text">Monitores activos en el centro</p>
                             </div>
                         </div>
                     </div>
@@ -135,8 +135,8 @@
                     </div>
                     <div class="col-md-4">
                         <button class="btn w-100 p-3" style="background-color: #B7E4C7; color: #000;"
-                            data-bs-toggle="modal" data-bs-target="#modalProfesor">
-                            ➕ Agregar profesor
+                            data-bs-toggle="modal" data-bs-target="#modalMonitor">
+                            ➕ Agregar monitor
                         </button>
                     </div>
                 </div>
@@ -180,7 +180,7 @@
                         <thead>
                             <tr>
                                 <th style="background-color: #E0E0E0; color: black;">Clase</th>
-                                <th style="background-color: #E0E0E0; color: black;">Profesor</th>
+                                <th style="background-color: #E0E0E0; color: black;">Monitor</th>
                                 <th style="background-color: #E0E0E0; color: black;">Día</th>
                                 <th style="background-color: #E0E0E0; color: black;">Hora</th>
                                 <th style="background-color: #E0E0E0; color: black;">Nivel</th>
@@ -204,9 +204,9 @@
                     <button class="btn btn-dark auto">🔽 Ver más</button>
                 </div>
                 
-                <!-- Profesores -->
+                <!-- Monitores -->
                 <div class="mt-4">
-                    <h2 class="mb-3" id="profesores">Profesores</h2>
+                    <h2 class="mb-3" id="Monitores">Monitores</h2>
                     <table class="table table-hover table-bordered">
                         <thead>
                             <tr>
@@ -397,27 +397,27 @@
             </div>
         </div>
     </div>
-    <!-- Modal Profesor -->
-    <div class="modal fade" id="modalProfesor" tabindex="-1" aria-labelledby="modalProfesorLabel" aria-hidden="true">
+    <!-- Modal Monitor -->
+    <div class="modal fade" id="modalMonitor" tabindex="-1" aria-labelledby="modalMonitorLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalProfesorLabel">Agregar profesor</h5>
+                    <h5 class="modal-title" id="modalMonitorLabel">Agregar Monitor</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
                     <form>
                         <div class="mb-3">
-                            <label for="nombreProfesor" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombreProfesor">
+                            <label for="nombreMonitor" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombreMonitor">
                         </div>
                         <div class="mb-3">
-                            <label for="especialidadProfesor" class="form-label">Especialidad</label>
-                            <input type="text" class="form-control" id="especialidadProfesor">
+                            <label for="especialidadMonitor" class="form-label">Especialidad</label>
+                            <input type="text" class="form-control" id="especialidadMonitor">
                         </div>
                         <div class="mb-3">
-                            <label for="contactoProfesor" class="form-label">Contacto</label>
-                            <input type="tel" class="form-control" id="contactoProfesor">
+                            <label for="contactoMonitor" class="form-label">Contacto</label>
+                            <input type="tel" class="form-control" id="contactoMonitor">
                         </div>
                         <button type="submit" class="btn w-100" style="background-color: #B7E4C7; color: #000;"
                             data-bs-dismiss="modal">
