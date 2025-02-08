@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pilates Center</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row min-vh-100">
+            <!-- Columna izquierda con logo y menú vertical -->
+            <div class="col-2 d-flex flex-column align-items-center">
+                <img src="logo_pilates.png" class="img-fluid my-3" alt="Logo">
+                <ul class="nav flex-column w-100">
+                    <li class="nav-item" style="margin-bottom: 5px;">
+                        <a class="nav-link active" aria-current="page" href="#inicio" 
+                            style="background-color: #E0E0E0; color: black; border-radius: 5px; padding: 10px 15px; text-align: center; display: block;"
+                            data-bs-toggle="tooltip" title="Ir a la página de inicio">
+                            INICIO
+                        </a>
+                    </li>
+                    <li class="nav-item" style="margin-bottom: 5px;">
+                        <a class="nav-link" href="#clientes" 
+                            style="background-color: #E0E0E0; color: black; border-radius: 5px; padding: 10px 15px; text-align: center; display: block;"
+                            data-bs-toggle="tooltip" title="Ver lista de clientes">
+                            CLIENTES
+                        </a>
+                    </li>
+                    <li class="nav-item" style="margin-bottom: 5px;">
+                        <a class="nav-link" href="#clases" 
+                            style="background-color: #E0E0E0; color: black; border-radius: 5px; padding: 10px 15px; text-align: center; display: block;"
+                            data-bs-toggle="tooltip" title="Ver clases de pilates">
+                            CLASES
+                        </a>
+                    </li>
+                    <li class="nav-item" style="margin-bottom: 5px;">
+                        <a class="nav-link" href="#profesores" 
+                            style="background-color: #E0E0E0; color: black; border-radius: 5px; padding: 10px 15px; text-align: center; display: block;"
+                            data-bs-toggle="tooltip" title="Lista de profesores disponibles">
+                            PROFESORES
+                        </a>
+                    </li>
+                    <li class="nav-item" style="margin-bottom: 5px;">
+                        <a class="nav-link" href="#progreso" 
+                            style="background-color: #E0E0E0; color: black; border-radius: 5px; padding: 10px 15px; text-align: center; display: block;"
+                            data-bs-toggle="tooltip" title="Ver el progreso del centro">
+                            PROGRESO
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactos" 
+                            style="background-color: #E0E0E0; color: black; border-radius: 5px; padding: 10px 15px; text-align: center; display: block;"
+                            data-bs-toggle="tooltip" title="Contactos de soporte y mantenimiento">
+                            CONTACTOS
+                        </a>
+                    </li>                    
+                </ul>
+            </div>
+
+            <!-- Página de administración principal -->
+            <div class="col-md-10 px-4" id="inicio">
+                <!-- Breadcrumb -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mt-3">
+                        <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="#">Acceso</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                    </ol>
+                </nav>
+                <h1 class="mt-4" style="text-align: center;">ADMINISTRACIÓN DE PILATES CENTER</h1>
+                <p>Gestiona fácilmente los clientes, profesores y clases.</p>
+
+                <!-- Tarjetas de resumen -->
+                <div class="row">
+                    <!-- Clientes -->
+                    <div class="col-md-3">
+                        <div class="card text-dark" style="background-color: #A8DADC;">
+                            <div class="card-header">👥 Clientes activos</div>
+                            <div class="card-body">
+                                <h2 class="card-title">70</h2>
+                                <p class="card-text">Clientes con suscripciones activas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Clases -->
+                    <div class="col-md-3">
+                        <div class="card text-dark" style="background-color: #CDB4DB;">
+                            <div class="card-header">📆 Clases</div>
+                            <div class="card-body">
+                                <h2 class="card-title">10</h2>
+                                <p class="card-text">Clases programadas esta semana</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Profesores -->
+                    <div class="col-md-3">
+                        <div class="card text-dark" style="background-color: #B7E4C7;">
+                            <div class="card-header">🧘‍♀️ Profesores</div>
+                            <div class="card-body">
+                                <h2 class="card-title">5</h2>
+                                <p class="card-text">Profesores activos en el centro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ingresos -->
+                    <div class="col-md-3">
+                        <div class="card text-dark" style="background-color: #F7D488;">
+                            <div class="card-header">💰 Ingresos</div>
+                            <div class="card-body">
+                                <h2 class="card-title">8.500 €</h2>
+                                <p class="card-text">Ingresos del mes actual</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Atajos Rápidos (Botones Modales) -->
+                <h2 class="mt-4">Atajos rápidos</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <button class="btn w-100 p-3" style="background-color: #A8DADC; color: #000;"
+                            data-bs-toggle="modal" data-bs-target="#modalCliente">
+                            ➕ Agregar cliente
+                        </button>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn w-100 p-3" style="background-color: #CDB4DB; color: #000;"
+                            data-bs-toggle="modal" data-bs-target="#modalClase">
+                            ➕ Agregar clase
+                        </button>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn w-100 p-3" style="background-color: #B7E4C7; color: #000;"
+                            data-bs-toggle="modal" data-bs-target="#modalProfesor">
+                            ➕ Agregar profesor
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Clientes -->
+                <div class="mt-4">
+                    <h2 class="mb-3" id="clientes">Clientes</h2>
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                            <tr>
+                                <th style="background-color: #E0E0E0; color: black;">ID</th>
+                                <th style="background-color: #E0E0E0; color: black;">Nombre</th>
+                                <th style="background-color: #E0E0E0; color: black;">Edad</th>
+                                <th style="background-color: #E0E0E0; color: black;">Nivel</th>
+                                <th style="background-color: #E0E0E0; color: black;">Plan</th>
+                                <th style="background-color: #E0E0E0; color: black;">Estado</th>
+                                <th style="background-color: #E0E0E0; color: black;">Inscripción</th>
+                                <th style="background-color: #E0E0E0; color: black;">Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>001</td><td>Sofía Pérez</td><td>30</td><td>Intermedio</td><td>Anual</td><td class="text-success">✅ Activo</td><td>10/01/2024</td><td><button class="btn btn-warning btn-sm">✏️ Editar</button> <button class="btn btn-danger btn-sm">🗑️ Eliminar</button></td></tr>
+                            <tr><td>002</td><td>Marcos Díaz</td><td>40</td><td>Principiante</td><td>Mensual</td><td class="text-danger">❌ Inactivo</td><td>15/02/2024</td><td><button class="btn btn-warning btn-sm">✏️ Editar</button> <button class="btn btn-danger btn-sm">🗑️ Eliminar</button></td></tr>
+                            <tr><td>003</td><td>Lucía Gómez</td><td>28</td><td>Avanzado</td><td>Trimestral</td><td class="text-success">✅ Activo</td><td>05/03/2024</td><td><button class="btn btn-warning btn-sm">✏️ Editar</button> <button class="btn btn-danger btn-sm">🗑️ Eliminar</button></td></tr>
+                            <tr><td>004</td><td>Carlos Herrera</td><td>35</td><td>Intermedio</td><td>Mensual</td><td class="text-success">✅ Activo</td><td>22/02/2024</td><td><button class="btn btn-warning btn-sm">✏️ Editar</button> <button class="btn btn-danger btn-sm">🗑️ Eliminar</button></td></tr>
+                            <tr><td>005</td><td>Elena Ruiz</td><td>29</td><td>Principiante</td><td>Anual</td><td class="text-success">✅ Activo</td><td>18/01/2024</td><td><button class="btn btn-warning btn-sm">✏️ Editar</button> <button class="btn btn-danger btn-sm">🗑️ Eliminar</button></td></tr>
+                            <tr><td>006</td><td>Manuel Torres</td><td>33</td><td>Intermedio</td><td>Trimestral</td><td class="text-danger">❌ Inactivo</td><td>12/02/2024</td><td><button class="btn btn-warning btn-sm">✏️ Editar</button> <button class="btn btn-danger btn-sm">🗑️ Eliminar</button></td></tr>
+                            <tr><td>007</td><td>Andrea López</td><td>27</td><td>Avanzado</td><td>Mensual</td><td class="text-success">✅ Activo</td><td>03/03/2024</td><td><button class="btn btn-warning btn-sm">✏️ Editar</button> <button class="btn btn-danger btn-sm">🗑️ Eliminar</button></td></tr>
+                            <tr><td>008</td><td>Pablo Méndez</td><td>45</td><td>Principiante</td><td>Anual</td><td class="text-success">✅ Activo</td><td>28/01/2024</td><td><button class="btn btn-warning btn-sm">✏️ Editar</button> <button class="btn btn-danger btn-sm">🗑️ Eliminar</button></td></tr>
+                            <tr><td>009</td><td>Valeria Ortiz</td><td>31</td><td>Intermedio</td><td>Trimestral</td><td class="text-success">✅ Activo</td><td>14/02/2024</td><td><button class="btn btn-warning btn-sm">✏️ Editar</button> <button class="btn btn-danger btn-sm">🗑️ Eliminar</button></td></tr>
+                            <tr><td>010</td><td>Fernando Ramírez</td><td>38</td><td>Avanzado</td><td>Mensual</td><td class="text-danger">❌ Inactivo</td><td>20/03/2024</td><td><button class="btn btn-warning btn-sm">✏️ Editar</button> <button class="btn btn-danger btn-sm">🗑️ Eliminar</button></td></tr>
+                        </tbody>
+                    </table>
+                    <button class="btn btn-dark auto">🔽 Ver más</button>
+                </div>
+                
+                <!-- Clases -->
+                <div class="mt-4">
+                    <h2 class="mb-3" id="clases">Clases</h2>
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                            <tr>
+                                <th style="background-color: #E0E0E0; color: black;">Clase</th>
+                                <th style="background-color: #E0E0E0; color: black;">Profesor</th>
+                                <th style="background-color: #E0E0E0; color: black;">Día</th>
+                                <th style="background-color: #E0E0E0; color: black;">Hora</th>
+                                <th style="background-color: #E0E0E0; color: black;">Nivel</th>
+                                <th style="background-color: #E0E0E0; color: black;">Cupos disponibles</th>
+                                <th style="background-color: #E0E0E0; color: black;">Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Pilates Suave</td><td>Laura Gómez</td><td>Lunes</td><td>18:00</td><td>Principiante</td><td>13/20</td><td><button class="btn btn-warning btn-sm">✏️ Editar</button> <button class="btn btn-danger btn-sm">🗑️ Eliminar</button></td></tr>
+                            <tr><td>Pilates Suave</td><td>Laura Gómez</td><td>Miércoles</td><td>19:30</td><td>Principiante</td><td>8/20</td><td><button class="btn btn-warning btn-sm">✏️ Editar</button> <button class="btn btn-danger btn-sm">🗑️ Eliminar</button></td></tr>
+                            <tr><td>Pilates Reformer</td><td>Ana López</td><td>Martes</td><td>17:00</td><td>Intermedio</td><td>8/15</td><td><button class="btn btn-warning btn-sm">✏️ Editar</button> <button class="btn btn-danger btn-sm">🗑️ Eliminar</button></td></tr>
+                            <tr><td>Pilates Reformer</td><td>Ana López</td><td>Jueves</td><td>20:00</td><td>Intermedio</td><td>9/15</td><td><button class="btn btn-warning btn-sm">✏️ Editar</button> <button class="btn btn-danger btn-sm">🗑️ Eliminar</button></td></tr>
+                            <tr><td>Pilates Terapéutico</td><td>Diego Santos</td><td>Viernes</td><td>10:00</td><td>Principiante</td><td>8/10</td><td><button class="btn btn-warning btn-sm">✏️ Editar</button> <button class="btn btn-danger btn-sm">🗑️ Eliminar</button></td></tr>
+                            <tr><td>Pilates Terapéutico</td><td>Diego Santos</td><td>Sábado</td><td>09:30</td><td>Principiante</td><td>7/10</td><td><button class="btn btn-warning btn-sm">✏️ Editar</button> <button class="btn btn-danger btn-sm">🗑️ Eliminar</button></td></tr>
+                            <tr><td>Pilates Avanzado</td><td>Elena Márquez</td><td>Jueves</td><td>18:30</td><td>Avanzado</td><td>11/15</td><td><button class="btn btn-warning btn-sm">✏️ Editar</button> <button class="btn btn-danger btn-sm">🗑️ Eliminar</button></td></tr>
+                            <tr><td>Pilates Avanzado</td><td>Elena Márquez</td><td>Domingo</td><td>10:00</td><td>Avanzado</td><td>6/15</td><td><button class="btn btn-warning btn-sm">✏️ Editar</button> <button class="btn btn-danger btn-sm">🗑️ Eliminar</button></td></tr>
+                            <tr><td>Pilates Suelo y Reformer</td><td>Lucía Fernández</td><td>Lunes</td><td>16:00</td><td>Intermedio</td><td>15/15</td><td><button class="btn btn-warning btn-sm">✏️ Editar</button> <button class="btn btn-danger btn-sm">🗑️ Eliminar</button></td></tr>
+                            <tr><td>Pilates Suelo y Reformer</td><td>Lucía Fernández</td><td>Martes</td><td>17:30</td><td>Intermedio</td><td>5/15</td><td><button class="btn btn-warning btn-sm">✏️ Editar</button> <button class="btn btn-danger btn-sm">🗑️ Eliminar</button></td></tr>
+                        </tbody>
+                    </table>
+                    <button class="btn btn-dark auto">🔽 Ver más</button>
+                </div>
+                
+                <!-- Profesores -->
+                <div class="mt-4">
+                    <h2 class="mb-3" id="profesores">Profesores</h2>
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                            <tr>
+                                <th style="background-color: #E0E0E0; color: black;">ID</th>
+                                <th style="background-color: #E0E0E0; color: black;">Nombre</th>
+                                <th style="background-color: #E0E0E0; color: black;">Especialidad</th>
+                                <th style="background-color: #E0E0E0; color: black;">Días</th>
+                                <th style="background-color: #E0E0E0; color: black;">Clases asignadas</th>
+                                <th style="background-color: #E0E0E0; color: black;">Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>101</td><td>Laura Gómez</td><td>Suave</td><td>Lunes - Miércoles</td><td>2</td><td><button class="btn btn-warning btn-sm">✏️ Editar</button> <button class="btn btn-danger btn-sm">🗑️ Eliminar</button></td></tr>
+                            <tr><td>102</td><td>Ana López</td><td>Reformer</td><td>Martes - Jueves</td><td>2</td><td><button class="btn btn-warning btn-sm">✏️ Editar</button> <button class="btn btn-danger btn-sm">🗑️ Eliminar</button></td></tr>
+                            <tr><td>103</td><td>Diego Santos</td><td>Terapéutico</td><td>Viernes - Sábado</td><td>2</td><td><button class="btn btn-warning btn-sm">✏️ Editar</button> <button class="btn btn-danger btn-sm">🗑️ Eliminar</button></td></tr>
+                            <tr><td>104</td><td>Elena Márquez</td><td>Avanzado</td><td>Jueves - Domingo</td><td>2</td><td><button class="btn btn-warning btn-sm">✏️ Editar</button> <button class="btn btn-danger btn-sm">🗑️ Eliminar</button></td></tr>
+                            <tr><td>105</td><td>Lucía Fernández</td><td>Suelo y Reformer</td><td>Lunes - Martes</td><td>2</td><td><button class="btn btn-warning btn-sm">✏️ Editar</button> <button class="btn btn-danger btn-sm">🗑️ Eliminar</button></td></tr>
+                        </tbody>
+                    </table>
+                    <button class="btn btn-dark auto">🔽 Ver más</button>
+                </div>
+                
+                <!-- Progreso-->
+                <div class="mt-4">
+                    <h2 class="mb-3" id="progreso">Progreso</h2>
+                    <div class="row">
+                        <!-- Clientes Activos -->
+                        <div class="col-md-4 border p-3">
+                            <h4>Clientes activos</h4>
+                            <p>Total de clientes: 100</p>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 70%;" aria-valuenow="70"
+                                    aria-valuemin="0" aria-valuemax="100">70% Activos</div>
+                            </div>
+                            <p class="mt-2 text-muted">📊 +5% respecto al mes anterior</p>
+                            <button type="button" class="btn btn-outline-secondary btn-sm mt-2" data-bs-toggle="popover"
+                                data-bs-trigger="hover focus" title="Clientes activos"
+                                data-bs-content="Este mes ha habido un aumento del 5% en clientes activos en comparación con el mes anterior.">
+                                ℹ️ Más info
+                            </button>
+                        </div>
+                        <!-- Ocupación de Clases -->
+                        <div class="col-md-4 border p-3">
+                            <h4>Ocupación total de clases</h4>
+                            <p>Capacidad total: 150 | Inscritos: 90</p>
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 60%;" aria-valuenow="60"
+                                    aria-valuemin="0" aria-valuemax="100">60% Ocupación</div>
+                            </div>
+                            <p class="mt-2 text-muted">📊 -3% respecto al mes anterior</p>
+                            <button type="button" class="btn btn-outline-secondary btn-sm mt-2" data-bs-toggle="popover"
+                                data-bs-trigger="hover focus" title="Ocupación de clases"
+                                data-bs-content="La ocupación de las clases ha bajado un 3% en comparación con el mes anterior.">
+                                ℹ️ Más info
+                            </button>
+                        </div>
+                        <!-- Valoración de Clientes -->
+                        <div class="col-md-4 border p-3">
+                            <h4>Valoración de clientes</h4>
+                            <p>Promedio: 4.5 / 5 ⭐</p>
+                            <div class="progress">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 90%;" aria-valuenow="90"
+                                    aria-valuemin="0" aria-valuemax="100">90% Satisfacción</div>
+                            </div>
+                            <p class="mt-2 text-muted">📊 Excelente feedback de los clientes este mes</p>
+                            <button type="button" class="btn btn-outline-secondary btn-sm mt-2" data-bs-toggle="popover"
+                                data-bs-trigger="hover focus" title="Valoración de clientes"
+                                data-bs-content="Los clientes han otorgado una calificación promedio de 4.5/5, lo que indica un alto nivel de satisfacción.">
+                                ℹ️ Más info
+                            </button>
+                        </div>
+                    </div>
+                </div>                              
+                
+                <!-- Contactos -->
+                <div class="mt-5 p-4 border rounded" id="contactos" style="background-color: #F0F0F0;">
+                    <h2 class="text-center mb-4">Contacto de soporte y mantenimiento</h2>
+                    <div class="row">
+                        <!-- Contacto técnico -->
+                        <div class="col-md-6">
+                            <h4>📞 Contacto de emergencia</h4>
+                            <p>En caso de avería en las instalaciones, contacta con nuestros técnicos especializados.</p>
+                
+                            <ul class="list-group">
+                                <li class="list-group-item"><strong>🔧 Mantenimiento general:</strong> +34 987 654 321</li>
+                                <li class="list-group-item"><strong>💧 Fontanería:</strong> +34 654 321 987</li>
+                                <li class="list-group-item"><strong>⚡ Electricidad:</strong> +34 123 789 456</li>
+                                <li class="list-group-item"><strong>🖥️ Soporte informático:</strong> soporte@pilatesadmin.com</li>
+                            </ul>
+                            <p class="mt-3 text-muted">*Disponibles de Lunes a Viernes de 8:00 AM a 8:00 PM</p>
+                        </div>
+                        <!-- Formulario de incidencias -->
+                        <div class="col-md-6">
+                            <h4>🚨 Reportar una incidencia</h4>
+                            <p>Si se detecta un problema en el centro, informa al equipo de mantenimiento.</p>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nombreReport" class="form-label">Tu nombre</label>
+                                    <input type="text" class="form-control" id="nombreReport" placeholder="Nombre">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="tipoIncidencia" class="form-label">Tipo de incidencia</label>
+                                    <select class="form-control" id="tipoIncidencia">
+                                        <option>🔧 Mantenimiento</option>
+                                        <option>💧 Fontanería</option>
+                                        <option>⚡ Electricidad</option>
+                                        <option>🖥️ Problema informático</option>
+                                        <option>Otro</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="descripcion" class="form-label">Descripción del problema</label>
+                                    <textarea class="form-control" id="descripcion" rows="3" placeholder="Describe el problema..."></textarea>
+                                </div>
+                                <button type="submit" class="btn w-100" style="background-color: #A8DADC; color: black;">📩 Enviar Reporte</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modales -->
+    <!-- Modal Cliente -->
+    <div class="modal fade" id="modalCliente" tabindex="-1" aria-labelledby="modalClienteLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalClienteLabel">Agregar Cliente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombreCliente" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombreCliente">
+                        </div>
+                        <div class="mb-3">
+                            <label for="edadCliente" class="form-label">Edad</label>
+                            <input type="number" class="form-control" id="edadCliente">
+                        </div>
+                        <div class="mb-3">
+                            <label for="planCliente" class="form-label">Plan</label>
+                            <select class="form-control" id="planCliente">
+                                <option>Mensual</option>
+                                <option>Trimestral</option>
+                                <option>Anual</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn w-100" style="background-color: #A8DADC; color: #000;"
+                            data-bs-dismiss="modal">
+                            Guardar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Clase -->
+    <div class="modal fade" id="modalClase" tabindex="-1" aria-labelledby="modalClaseLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalClaseLabel">Agregar clase</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombreClase" class="form-label">Nombre de la clase</label>
+                            <input type="text" class="form-control" id="nombreClase">
+                        </div>
+                        <div class="mb-3">
+                            <label for="instructorClase" class="form-label">Instructor</label>
+                            <input type="text" class="form-control" id="instructorClase">
+                        </div>
+                        <div class="mb-3">
+                            <label for="horarioClase" class="form-label">Horario</label>
+                            <input type="time" class="form-control" id="horarioClase">
+                        </div>
+                        <button type="submit" class="btn w-100" style="background-color: #CDB4DB; color: #000;"
+                            data-bs-dismiss="modal">
+                            Guardar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Profesor -->
+    <div class="modal fade" id="modalProfesor" tabindex="-1" aria-labelledby="modalProfesorLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProfesorLabel">Agregar profesor</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombreProfesor" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombreProfesor">
+                        </div>
+                        <div class="mb-3">
+                            <label for="especialidadProfesor" class="form-label">Especialidad</label>
+                            <input type="text" class="form-control" id="especialidadProfesor">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactoProfesor" class="form-label">Contacto</label>
+                            <input type="tel" class="form-control" id="contactoProfesor">
+                        </div>
+                        <button type="submit" class="btn w-100" style="background-color: #B7E4C7; color: #000;"
+                            data-bs-dismiss="modal">
+                            Guardar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Inicializar Tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        // Inicializar Popovers
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+          return new bootstrap.Popover(popoverTriggerEl)
+        })
+      </script>
+    
+</body>
